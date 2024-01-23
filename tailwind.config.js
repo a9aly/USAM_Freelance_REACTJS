@@ -6,6 +6,7 @@ export default {
       colors: {
         "button-color": "#6DAD04",
         "pri-color": "#e2efcd",
+        "jobs-number-color":'#FDC0AE'
       },
     },
   },

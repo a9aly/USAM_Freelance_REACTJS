@@ -156,3 +156,33 @@ input {
 ::placeholder {
   color: #e5e5e5;
 }
+
+.job-card {
+  border: 1px solid #e2efcd;
+  background-color: #e2efcd;
+  min-width: 200px;
+  width: 300px;
+  height: 350px;
+  margin-left: 2%;
+  margin-right: 2%;
+  border-radius: 10%;
+  pointer-events: visible;
+  padding: 2%;
+}
+
+.job-container {
+  display: flex;
+  flex-direction: row;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.job-container::-webkit-scrollbar {
+  display: none;
+}
+
+.job-card:hover {
+  background-color: #6dad04;
+  opacity: 0.8;
+}

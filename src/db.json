@@ -28,28 +28,30 @@
   ],
   "job": [
     {
+      "id": "1",
       "category": "product management",
-      "job-title": "product designer",
+      "job_title": "product designer",
       "type": "full time",
       "department": "product",
       "salary": "34k$-45k$",
-      "timestamp": "",
+      "timestamp": " ",
       "company": "GitLab",
-      "logo": "",
-      "no.applicants": "1200-300",
-      "no.jobs": "20"
+      "logo": " ",
+      "no_applicants": "1200-300",
+      "no_jobs": "20"
     },
     {
+      "id": "2",
       "category": "product management",
-      "job-title": "senior designer",
+      "job_title": "senior designer",
       "type": "full time",
       "department": "Head of Design",
       "salary": "25$-45k$",
-      "timestamp": "",
+      "timestamp": " ",
       "company": "Hotjar",
-      "logo": "",
-      "no.applicants": "140-300",
-      "no.jobs": "40"
+      "logo": " ",
+      "no_applicants": "140-300",
+      "no_jobs": "40"
     }
   ]
 }
