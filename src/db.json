@@ -1,0 +1,55 @@
+{
+  "users": [
+    {
+      "email": "ahmed@gmail.com",
+      "password": "asd123",
+      "id": "eb1f"
+    },
+    {
+      "email": "mohamed@gmail.com",
+      "password": "asd123",
+      "id": "0136"
+    },
+    {
+      "email": "ali@gmail.com",
+      "password": "asd123",
+      "id": "3027"
+    },
+    {
+      "id": "e007",
+      "email": "mohamed@gmail.com",
+      "password": "asd123"
+    },
+    {
+      "id": "d4de",
+      "email": "mohamed@gmail.com",
+      "password": "asd123"
+    }
+  ],
+  "job": [
+    {
+      "category": "product management",
+      "job-title": "product designer",
+      "type": "full time",
+      "department": "product",
+      "salary": "34k$-45k$",
+      "timestamp": "",
+      "company": "GitLab",
+      "logo": "",
+      "no.applicants": "1200-300",
+      "no.jobs": "20"
+    },
+    {
+      "category": "product management",
+      "job-title": "senior designer",
+      "type": "full time",
+      "department": "Head of Design",
+      "salary": "25$-45k$",
+      "timestamp": "",
+      "company": "Hotjar",
+      "logo": "",
+      "no.applicants": "140-300",
+      "no.jobs": "40"
+    }
+  ]
+}
