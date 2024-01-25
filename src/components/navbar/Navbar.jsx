@@ -44,12 +44,12 @@ const Navbar = () => {
         </div>
 
         <div className="nav-container md:mt-5 ml-8">
-          <button className=" bg-button-color text-white">
-            <Link to="/signup">Sign Up</Link>
-          </button>
-          <button>
-            <Link to="/login">Login</Link>
-          </button>
+          <Link to="/signup">
+            <button className=" bg-button-color text-white">Sign Up</button>
+          </Link>
+          <Link to="/login">
+            <button> Login</button>
+          </Link>
         </div>
 
         <div className="nav-container md:hidden">

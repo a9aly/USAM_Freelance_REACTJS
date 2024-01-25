@@ -26,6 +26,45 @@
       "password": "asd123"
     }
   ],
+  "categories": [
+    {
+      "name": "product management",
+      "no_posts": 2
+    },
+    {
+      "name": "design",
+      "no_posts": 0
+    },
+    {
+      "name": "development",
+      "no_posts": 0
+    },
+    {
+      "name": "marketing",
+      "no_posts": 0
+    },
+    {
+      "name": "customer service",
+      "no_posts": 0
+    },
+    {
+      "name": "Frontend Engineer",
+      "no_posts": 0
+    },
+    {
+      "name": "Backend Engineer",
+      "no_posts": 0
+    },
+    {
+      "name": "Data Analyst",
+      "no_posts": 0
+    },
+    {
+      "name": "Database Admin",
+      "no_posts": 0
+    }
+  ],
+
   "job": [
     {
       "id": "1",
@@ -34,10 +73,10 @@
       "type": "full time",
       "department": "product",
       "salary": "34k$-45k$",
-      "timestamp": " ",
+      "timestamp": "1hour ago",
       "company": "GitLab",
-      "logo": " ",
-      "no_applicants": "1200-300",
+      "logo": "gitlab.png",
+      "no_applicants": "120-300",
       "no_jobs": "20"
     },
     {
@@ -47,9 +86,9 @@
       "type": "full time",
       "department": "Head of Design",
       "salary": "25$-45k$",
-      "timestamp": " ",
+      "timestamp": "2hours ago",
       "company": "Hotjar",
-      "logo": " ",
+      "logo": "hotjar.png",
       "no_applicants": "140-300",
       "no_jobs": "40"
     }

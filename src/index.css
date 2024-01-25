@@ -165,7 +165,7 @@ input {
   height: 350px;
   margin-left: 2%;
   margin-right: 2%;
-  border-radius: 10%;
+  border-radius: 5%;
   pointer-events: visible;
   padding: 2%;
 }
