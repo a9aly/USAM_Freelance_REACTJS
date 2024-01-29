@@ -29,42 +29,50 @@
   "categories": [
     {
       "name": "product management",
-      "no_posts": 2
+      "no_posts": 3,
+      "id": "8e5f"
     },
     {
       "name": "design",
-      "no_posts": 0
+      "no_posts": 1,
+      "id": "b70a"
     },
     {
       "name": "development",
-      "no_posts": 0
+      "no_posts": 0,
+      "id": "7606"
     },
     {
       "name": "marketing",
-      "no_posts": 0
+      "no_posts": 0,
+      "id": "5b7d"
     },
     {
       "name": "customer service",
-      "no_posts": 0
+      "no_posts": 0,
+      "id": "8a36"
     },
     {
       "name": "Frontend Engineer",
-      "no_posts": 0
+      "no_posts": 0,
+      "id": "dc1d"
     },
     {
       "name": "Backend Engineer",
-      "no_posts": 0
+      "no_posts": 0,
+      "id": "1eb0"
     },
     {
       "name": "Data Analyst",
-      "no_posts": 0
+      "no_posts": 0,
+      "id": "8c73"
     },
     {
       "name": "Database Admin",
-      "no_posts": 0
+      "no_posts": 0,
+      "id": "4e3b"
     }
   ],
-
   "job": [
     {
       "id": "1",
@@ -91,6 +99,79 @@
       "logo": "hotjar.png",
       "no_applicants": "140-300",
       "no_jobs": "40"
+    },
+    {
+      "id": "7ef0",
+      "category": "product management",
+      "job_title": "Product Designer",
+      "type": "Full Time ",
+      "department": "Head of Design",
+      "salary": "40k$-45k$",
+      "timestamp": "",
+      "company": "GitLab",
+      "logo": "gitlab.png",
+      "no_applicants": "",
+      "no_jobs": ""
+    },
+    {
+      "id": "8c7f",
+      "category": "design",
+      "job_title": "Product Designer",
+      "type": "Full Time ",
+      "department": "Head of Design",
+      "salary": "34k$-50k$",
+      "timestamp": "",
+      "company": "GitLab",
+      "logo": "gitlab.png",
+      "no_applicants": "",
+      "no_jobs": ""
+    }
+  ],
+  "talent_category": [
+    {
+      "name": "Development % IT",
+      "rating": "4.85/5",
+      "skills": "349 skills"
+    },
+    {
+      "name": "Design & Creative",
+      "rating": "4.85/5",
+      "skills": "349 skills"
+    },
+    {
+      "name": "Sales & Marketing",
+      "rating": "4.85/5",
+      "skills": "349 skills"
+    },
+    {
+      "name": "Customer Support",
+      "rating": "4.85/5",
+      "skills": "349 skills"
+    },
+    {
+      "name": "Finance",
+      "rating": "4.85/5",
+      "skills": "349 skills"
+    },
+    {
+      "name": "Engineering",
+      "rating": "4.85/5",
+      "skills": "349 skills"
+    },
+    {
+      "name": "Writing",
+      "rating": "4.85/5",
+      "skills": "349 skills"
+    },
+    {
+      "name": "Legal",
+      "rating": "4.85/5",
+      "skills": "349 skills"
+    },
+    {
+      "name": "Photography",
+      "rating": "4.85/5",
+      "skills": "349 skills"
     }
   ]
 }
