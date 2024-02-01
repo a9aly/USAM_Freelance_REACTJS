@@ -6,6 +6,7 @@ import {
   Signup,
   Navbar,
   NoPage,
+  Cart,
 } from "./components";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
@@ -19,6 +20,7 @@ function App() {
           <Route path="find-work" element={<FindWork />} />
           <Route path="login" element={<Login />} />
           <Route path="signup" element={<Signup />} />
+          <Route path="cart" element={<Cart />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

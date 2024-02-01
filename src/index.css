@@ -220,3 +220,18 @@ input {
   height: 75%;
   width: 100%;
 }
+
+input[type="radio"] {
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #555555;
+  border-radius: 50%;
+  background-clip: content-box;
+  padding: 3px;
+  background-color: #e2efcd;
+}
+
+input[type="radio"]:checked {
+  background-color: #6dad04;
+}

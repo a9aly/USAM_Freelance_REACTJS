@@ -1,106 +1,95 @@
+import { useState } from "react";
 import Footer from "../navbar/Footer";
 const FindFreelancers = () => {
+  const [currType, setType] = useState("All");
+  const workType = [
+    "All",
+    "Development & IT",
+    "Design & Creative",
+    "Finance & Accounting",
+    "Admin & Customer Support",
+    "Sales & Marketing",
+    "Engineering",
+    "Writing & Translation",
+  ];
   return (
-    <div className="flex flex-col absolute top-[15%] w-full">
-      <div className="wrapper h-fit bg-pri-color flex md:flex-row flex-col md:gap-0 gap-5 pb-[2%]">
-        {/* Left Section */}
-        <div className=" md:w-[70%] md:mr-[5%] md:mt-[1%] md:mb-[1%] bg-white flex flex-col justify-around p-[3%] items-center min-h-[600px]">
-          <img
-            src="person.png"
-            alt="profile picture"
-            className=" rounded-full w-auto h-[30%] align-middle object-cover"
-          />
-          <div className=" flex flex-col items-center">
-            <span className=" text-xl font-bold block">Leslie Alexander</span>
-            <span className=" text-l font-extralight">UI/UX Designer</span>
-            <div className="flex flex-row justify-around w-5 gap-5">
-              <img src="facebook-blue.svg" alt="facebook logo" />
-              <img src="twitter-blue.svg" alt="twitter logo" />
-              <img src="dribble.svg" alt="dribble logo" />
-              <img src="linkedin.svg" alt="linkedin logo" />
-              <img src="github.svg" alt="github logo" />
-            </div>
+    <div className=" flex flex-col absolute top-[15%] w-full">
+      <div className=" wrapper bg-white md:h-[1000px]">
+        <h3 className=" text-gray-600 font-light">
+          Find Freelancer &gt;&gt;{" "}
+          <span className=" text-button-color">Find by your needed skills</span>
+        </h3>
+
+        <div className=" flex md:flex-row flex-col h-full gap-[1%]">
+          {/* left Section */}
+          <div className=" w-[fit] h-[60%] bg-pri-color text-xl font-thin p-5 rounded-3xl whitespace-nowrap">
+            Type of work
+            <ul className=" pt-2">
+              {workType.map((type) => (
+                <li className=" pb-3">
+                  <input
+                    id={type}
+                    type="radio"
+                    name="work-type"
+                    value={type}
+                    className=" w-4 h-3 inline-block mr-2"
+                    checked={type == currType ? true : false}
+                    onClick={() => setType(type)}
+                  />
+                  <label for={type} className="inline">
+                    {type}
+                  </label>
+                </li>
+              ))}
+            </ul>
           </div>
 
-          <button className="bg-button-color text-white text-center">
-            Hire Now
-          </button>
-          <div className="flex flex-row w-full justify-between whitespace-nowrap">
-            <div className=" font-bold">
-              Weekly Salary{" "}
-              <span className="block font-extralight">500$ per week</span>
-            </div>
-            <div className="font-bold">
-              Availability{" "}
-              <span className="block font-extralight"> 10 hrs per day</span>
-            </div>
-          </div>
-        </div>
-
-        {/* Right Section */}
-        <div className="p-[4%] md:flex-grow md:mb-[1%] md:mt-[1%] flex flex-col bg-white">
-          <h1>Overview</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta nisi
-            et autem officia consectetur cumque accusantium neque saepe
-            inventore necessitatibus, similique doloremque, tempore, aliquid
-            ducimus excepturi cum id. In quo ducimus ipsum accusamus quae
-            laudantium, distinctio explicabo iure necessitatibus quod. Esse
-            repellat enim odit neque voluptas dolorem modi nisi quaerat.
-          </p>
-          <div className=" flex flex-row justify-between">
-            <div className="flex flex-col gap-5">
-              <h1 className="text-xl md:text-[2em]">Employment History</h1>
-              <div>
-                <span className="block font-extralight">2010-2015</span>
-                <span className="block">Product Designer</span>
-                <span className="block text-button-color">@ Google</span>
-              </div>
-              <div>
-                <span className="block font-extralight">2015-2017</span>
-                <span className="block">UI/UX Designer</span>
-                <span className="block text-button-color">@ Amazon</span>
-              </div>
-              <div>
-                <span className="block font-extralight">2018-2020</span>
-                <span className="block">UI/UX Developer</span>
-                <span className="block text-button-color">@ Value</span>
-              </div>
-              <div>
-                <span className="block font-extralight">2020-Now</span>
-                <span className="block">UI/UX Designer</span>
-                <span className="block text-button-color">@ Fawry</span>
-              </div>
-            </div>
-            <div className=" flex flex-col">
-              <div className=" flex flex-col gap-4">
-                <h1 className=" text-xl md:text-[2em]">Education</h1>
-                <div>
-                  <span className="block font-extralight">1996-2010</span>
-                  <span className="block">Student</span>
-                  <span className="block text-button-color">
-                    @ Azhar School
+          {/* start right section */}
+          <div className=" overflow-y-auto grow grid lg:grid-cols-2 max-w-[100%] max-h-[80%]">
+            {workType.map(() => (
+              <div className="flex flex-col bg-white h-fit p-4 gap-5 shadow-xl m-4">
+                <h1 className=" pb-0 mb-0">
+                  Creative Person for Advertising
+                  <span className=" font-extralight block text-lg">
+                    <img
+                      src="person.png"
+                      alt="profile picture"
+                      className="w-5 h-5 rounded-full inline-block mr-1"
+                    />
+                    Wade Wareen
                   </span>
-                </div>
-                <div>
-                  <span className="block font-extralight">2010 - 2014</span>
-                  <span className="block">Student</span>
-                  <span className="block text-button-color">
-                    @ Cairo University
-                  </span>
-                </div>
-              </div>
-              <div>
-                <h1 className=" text-xl md:text-[2em]">Projects</h1>
+                </h1>
                 <p>
-                  <span className=" text-button-color">50 </span>Projects
-                  related to product design.
+                  I'm an expert in web Development, SEO Development, Creating
+                  Loading Pages, and Ad Creation. UT enim ad minim veniam, quis
+                  nosturd exercitaion ullamco laboris nisi ut ailquip ex ea
+                  commodo con
                 </p>
+                <div className=" flex flex-row justify-start gap-[3%]">
+                  <span className=" bg-gray-300 md:px-6 px-2 py-1 rounded-full whitespace-nowrap">
+                    Full Time
+                  </span>
+                  <span className=" bg-gray-300 md:px-6 px-2 py-1 rounded-full whitespace-nowrap">
+                    Half Time
+                  </span>
+                  <span className=" bg-gray-300 md:px-6 px-2 py-1 rounded-full">
+                    Hyrbrid
+                  </span>
+                </div>
+                <div className=" flex flex-row justify-around">
+                  <button className=" bg-button-color text-white md:max-w-[200px] md:text-lg md:px-[1em] md:py-[0.2em] max-w-fit text-sm p-2">
+                    Schedule Meeting
+                  </button>
+                  <button className=" md:max-w-[200px] md:text-lg md:px-[1em] md:py-[0.2em] max-w-fit text-sm p-1">
+                    Send Message
+                  </button>
+                </div>
               </div>
-            </div>
+            ))}
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );
