@@ -1,7 +1,7 @@
 const Guide = () => {
   return (
-    <div className="p-20 max-w-[100vw]">
-      <div className="flex flex-row border-2 shadow-md border-white justify-around p-[4%]">
+    <div className="md:p-20 max-w-[100vw]">
+      <div className="flex flex-row border-2 shadow-md border-white justify-around p-[4%] w-fi">
         <div className="text-center ">
           <img src="icon1.png" alt="icon1" className=" m-auto max-w-[100px]" />
           <h1>Create Account</h1>

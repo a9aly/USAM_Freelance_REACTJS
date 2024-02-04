@@ -1,14 +1,18 @@
 const Footer = () => {
   return (
     <>
-      <div className="wrapper flex flex-row p-5 justify-around gap-1">
-        <div className="sm:w-[15%]">
-          <img src="usam.png" alt="logo" className=" w-[50%]" />
-          <h4 className=" text-button-color text-xs md:text-lg">
+      <div className="wrapper flex md:flex-row flex-col p-5 justify-around gap-1">
+        <div className="md:w-[15%] w-full text-center">
+          <img
+            src="usam.png"
+            alt="logo"
+            className=" md:w-[50%] mx-[35%] md:mx-[20%]"
+          />
+          <h4 className=" text-button-color text-lg">
             Powerful Freelance Marketplace System with ability to change the
             Users (Freelance & Clients)
           </h4>
-          <span className="flex flex-row md:gap-4">
+          <span className="flex flex-row md:gap-4 justify-around">
             <img
               src="instagram.svg"
               alt="instagram logo"
@@ -18,27 +22,28 @@ const Footer = () => {
             <img src="facebook.png" alt="facebook logo" className=" w-6 h-6" />
           </span>
         </div>
-        <div>
-          <h3 className=" font-bold  text-center md:text-start">For Clients</h3>
-          <ul className=" text-xs md:text-base">
+
+        <div className=" text-center md:text-start text-lg">
+          <h3 className=" font-bold">For Clients</h3>
+          <ul>
             <li>Find Freelancers</li>
             <li>Post Project</li>
             <li>Refund Policy</li>
             <li>Privacy Policy</li>
           </ul>
         </div>
-        <div>
-          <h3 className="font-bold text-center md:text-start">
-            For Freelancers
-          </h3>
-          <ul className=" text-xs md:text-base">
+
+        <div className=" text-center md:text-start text-lg">
+          <h3 className="font-bold">For Freelancers</h3>
+          <ul>
             <li>Find Work</li>
             <li>Create Account</li>
           </ul>
         </div>
-        <div>
-          <h3 className="font-bold text-center md:text-start">Call Us</h3>
-          <ul className=" text-xs md:text-base">
+
+        <div className="text-center md:text-start text-lg ">
+          <h3 className=" font-bold">Call Us</h3>
+          <ul>
             <li>
               <img
                 src="location.svg"
@@ -66,6 +71,7 @@ const Footer = () => {
           </ul>
         </div>
       </div>
+
       <span className="wrapper text-center font-extralight mb-10 block">
         2024 USAM. All right reserved
       </span>

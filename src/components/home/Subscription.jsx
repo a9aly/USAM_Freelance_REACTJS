@@ -6,7 +6,7 @@ const Subscription = () => {
         Subscribe to our newsletter to get new freelance work and projects
       </h3>
       <input
-        className=" w-[30%] mb-5"
+        className=" w-fit mb-5"
         placeholder="Enter your email address"
       ></input>
       <button className=" bg-button-color text-white min-w-min">
