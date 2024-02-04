@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { left_arrow, right_arrow, users } from "../../assets/constants";
 const JobOpportunities = (data) => {
   const [activeCategory, setActiveCategory] = useState("product management");
 
@@ -10,7 +11,7 @@ const JobOpportunities = (data) => {
       <div className="flex flex-row-reverse gap-2">
         <span className="w-12 bg-black rounded-full p-2">
           <img
-            src="right-arrow.svg"
+            src={right_arrow}
             onClick={() =>
               (document.getElementsByClassName(
                 "job-container"
@@ -20,7 +21,7 @@ const JobOpportunities = (data) => {
         </span>
         <span className="w-12 border-2 border-black rounded-full p-2">
           <img
-            src="left-arrow.png"
+            src={left_arrow}
             onClick={() =>
               (document.getElementsByClassName(
                 "job-container"
@@ -76,16 +77,16 @@ const JobOpportunities = (data) => {
                   </span>
                   <div className="flex flex-row justify-between mt-[4%] w-full">
                     <img
-                      src={job.logo}
+                      src={
+                        "http://localhost:5173/USAM_Freelance_REACTJS/src/assets/constants/" +
+                        job.logo
+                      }
                       className="w-[20%] h-[25%] mr-2 bg-white rounded-xl"
                     />
                     <span className="opacity-50">
                       {job.company}
                       <span className="block">
-                        <img
-                          src="users.png"
-                          className=" w-[15%] inline mr-1 "
-                        />
+                        <img src={users} className=" w-[15%] inline mr-1 " />
                         140-300
                       </span>
                     </span>

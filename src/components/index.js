@@ -6,5 +6,15 @@ import Signup from "./user/Signup";
 import Navbar from "./navbar/Navbar";
 import NoPage from "./NoPage";
 import Cart from "./user/Cart";
-
-export { FindFreelancers, FindWork, Home, Login, Signup, Navbar, NoPage, Cart };
+import FreelancerProfile from "./findfreelancers/FreelancerProfile";
+export {
+  FindFreelancers,
+  FindWork,
+  Home,
+  Login,
+  Signup,
+  Navbar,
+  NoPage,
+  Cart,
+  FreelancerProfile,
+};

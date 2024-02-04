@@ -1,6 +1,14 @@
 import { postJob } from "../../redux/store/PostSlice";
 import { useState } from "react";
 import { useDispatch } from "react-redux";
+import {
+  avatar,
+  close,
+  poster,
+  gitlab,
+  github,
+  switchImg,
+} from "../../assets/constants";
 const Post = (data) => {
   let jobTemplate = {
     category: "Product Management",
@@ -30,7 +38,7 @@ const Post = (data) => {
         <h1>
           Post Your Job!
           <img
-            src="close.svg"
+            src={close}
             className=" hidden sm:inline absolute w-10 right-[5%] cursor-pointer"
             alt="close icon"
             onClick={() => {
@@ -86,7 +94,7 @@ const Post = (data) => {
             setJobPost({
               ...jobPost,
               company: e.target.value,
-              logo: e.target.value.toLowerCase() + ".png",
+              logo: e.target.value.toLowerCase(),
             })
           }
         />
@@ -109,7 +117,7 @@ const Post = (data) => {
       <div className="wrapper md:h-[40%] bg-pri-color w-full flex flex-row">
         <div className="flex flex-col w-[60%]">
           <h3>
-            <img src="switch.svg" className="inline w-[2em] mr-2" />
+            <img src={switchImg} className="inline w-[2em] mr-2" />
             Find your Dream Job
           </h3>
           <h1>Freelance Jobs And Talents At Your Fingertips</h1>
@@ -118,9 +126,9 @@ const Post = (data) => {
             perfect match for your next project
           </h3>
           <div className="flex flex-row">
-            <img src="avatar.png" className="w-[40px] h-[40px]" />
-            <img src="avatar.png" className="w-[40px] h-[40px]" />
-            <img src="avatar.png" className="w-[40px] h-[40px]" />
+            <img src={avatar} className="w-[40px] h-[40px]" />
+            <img src={avatar} className="w-[40px] h-[40px]" />
+            <img src={avatar} className="w-[40px] h-[40px]" />
             <button
               className=" text-white bg-button-color p-3 ml-10"
               onClick={() =>
@@ -136,7 +144,7 @@ const Post = (data) => {
           </h3>
         </div>
         <div>
-          <img src="poster.png" className=" max-[640px]:pt-[100px]" />
+          <img src={poster} className=" max-[640px]:pt-[100px]" />
         </div>
       </div>
     </>

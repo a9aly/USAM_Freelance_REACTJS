@@ -1,3 +1,4 @@
+import { dribble, facebook_blue, github, linkedin, person, twitter_blue } from "../../assets/constants";
 import Footer from "../navbar/Footer";
 const FreelancerProfile = () => {
   return (
@@ -6,7 +7,7 @@ const FreelancerProfile = () => {
         {/* Left Section */}
         <div className=" md:w-[70%] md:mr-[5%] md:mt-[1%] md:mb-[1%] bg-white flex flex-col justify-around p-[3%] items-center min-h-[600px]">
           <img
-            src="person.png"
+            src={person}
             alt="profile picture"
             className=" rounded-full w-auto h-[30%] align-middle object-cover"
           />
@@ -14,11 +15,11 @@ const FreelancerProfile = () => {
             <span className=" text-xl font-bold block">Leslie Alexander</span>
             <span className=" text-l font-extralight">UI/UX Designer</span>
             <div className="flex flex-row justify-around w-5 gap-5">
-              <img src="facebook-blue.svg" alt="facebook logo" />
-              <img src="twitter-blue.svg" alt="twitter logo" />
-              <img src="dribble.svg" alt="dribble logo" />
-              <img src="linkedin.svg" alt="linkedin logo" />
-              <img src="github.svg" alt="github logo" />
+              <img src={facebook_blue} alt="facebook logo" />
+              <img src={twitter_blue}alt="twitter logo" />
+              <img src={dribble} alt="dribble logo" />
+              <img src={linkedin} alt="linkedin logo" />
+              <img src={github} alt="github logo" />
             </div>
           </div>
 

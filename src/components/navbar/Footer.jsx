@@ -1,10 +1,20 @@
+import {
+  email,
+  facebook,
+  instagram,
+  location,
+  phone,
+  twitter,
+  usam,
+} from "../../assets/constants";
+
 const Footer = () => {
   return (
     <>
       <div className="wrapper flex md:flex-row flex-col p-5 justify-around gap-1">
         <div className="md:w-[15%] w-full text-center">
           <img
-            src="usam.png"
+            src={usam}
             alt="logo"
             className=" md:w-[50%] mx-[35%] md:mx-[20%]"
           />
@@ -13,13 +23,9 @@ const Footer = () => {
             Users (Freelance & Clients)
           </h4>
           <span className="flex flex-row md:gap-4 justify-around">
-            <img
-              src="instagram.svg"
-              alt="instagram logo"
-              className=" w-6 h-6"
-            />
-            <img src="twitter.svg" alt="twitter logo" className=" w-6 h-6" />
-            <img src="facebook.png" alt="facebook logo" className=" w-6 h-6" />
+            <img src={instagram} alt="instagram logo" className=" w-6 h-6" />
+            <img src={twitter} alt="twitter logo" className=" w-6 h-6" />
+            <img src={facebook} alt="facebook logo" className=" w-6 h-6" />
           </span>
         </div>
 
@@ -46,7 +52,7 @@ const Footer = () => {
           <ul>
             <li>
               <img
-                src="location.svg"
+                src={location}
                 alt="location icon"
                 className=" w-4 h-4 inline-block mr-2"
               />
@@ -54,7 +60,7 @@ const Footer = () => {
             </li>
             <li className=" whitespace-nowrap">
               <img
-                src="phone.svg"
+                src={phone}
                 alt="phone icon"
                 className=" w-4 h-4 inline-block mr-2"
               />
@@ -62,7 +68,7 @@ const Footer = () => {
             </li>
             <li className=" whitespace-nowrap">
               <img
-                src="email.svg"
+                src={email}
                 alt="email icon"
                 className=" w-4 h-4 inline-block mr-2"
               />

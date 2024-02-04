@@ -1,3 +1,5 @@
+import { gitlab, greenstar } from "../../assets/constants";
+
 const Category = (data) => {
   return (
     <div className="wrapper bg-pri-color h-fit">
@@ -7,13 +9,13 @@ const Category = (data) => {
       <div className="talent-container pb-[150px]">
         {data.talent_category.map((talent) => (
           <div className="talent-card" key={talent.name}>
-            <img src="gitlab.png" />
+            <img src={gitlab} />
             <h1>
               {talent.name}
               <br />
               <div className=" font-extralight text-sm flex justify-between flex-grow">
                 <div>
-                  <img src="greenstar.png" alt="rating-star" className="!w-4" />
+                  <img src={greenstar} alt="rating-star" className="!w-4" />
                   <span> &nbsp; 4.85/5 </span>
                   <span>349 skills</span>
                 </div>

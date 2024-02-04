@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Footer from "../navbar/Footer";
+import { person } from "../../assets/constants";
 const FindFreelancers = () => {
   const [currType, setType] = useState("All");
   const workType = [
@@ -52,7 +53,7 @@ const FindFreelancers = () => {
                   Creative Person for Advertising
                   <span className=" font-extralight block text-lg">
                     <img
-                      src="person.png"
+                      src={person}
                       alt="profile picture"
                       className="w-5 h-5 rounded-full inline-block mr-1"
                     />

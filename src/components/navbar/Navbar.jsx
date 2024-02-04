@@ -1,14 +1,18 @@
 import { useState } from "react";
 import { Outlet, Link, NavLink } from "react-router-dom";
+import { usam } from "../../assets/constants";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
     <>
       <nav className="z-50 max-w-[100vw]">
         <div className="nav-container">
-          <Link to="/" className="relative bg-white rounded-full w-24 h-24">
+          <Link
+            to="/USAM_Freelance_REACTJS/"
+            className="relative bg-white rounded-full w-24 h-24"
+          >
             <img
-              src="usam.png"
+              src={usam}
               alt="USAM LOGO"
               className="absolute w-16 top-7 left-4"
             />
@@ -17,7 +21,7 @@ const Navbar = () => {
 
         <div className="hidden md:flex flex-row gap-3 pt-8 pl-2">
           <NavLink
-            to="/"
+            to="/USAM_Freelance_REACTJS/"
             style={({ isActive }) => ({
               color: isActive ? "#6DAD04" : "",
             })}

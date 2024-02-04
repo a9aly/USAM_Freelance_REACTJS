@@ -1,3 +1,5 @@
+import { person, person2, person3 } from "../../assets/constants";
+
 const Portfolios = () => {
   return (
     <div className="wrapper flex flex-col w-full text-center h-[fit] pb-[50px] ">
@@ -8,17 +10,17 @@ const Portfolios = () => {
       </h1>
       <div className="grid md:grid-flow-col grid-flow-row justify-items-center h-fit">
         <div className="portofolio-card">
-          <img src="person.png" />
+          <img src={person} />
           <h2 className=" text-left pl-5 ">Jenny Wilson</h2>
           <h3 className="text-left pl-5 font-thin">UI/UX Designer</h3>
         </div>
         <div className="portofolio-card">
-          <img src="Person2.png" />
+          <img src={person2} />
           <h2 className=" text-left pl-5">Dianne Russell</h2>
           <h3 className="text-left pl-5 font-thin">Graphic Designer</h3>
         </div>
         <div className="portofolio-card">
-          <img src="Person3.png" />
+          <img src={person3} />
           <h2 className=" text-left pl-5">Albert Flores</h2>
           <h3 className="text-left pl-5 font-thin">Developer</h3>
         </div>
