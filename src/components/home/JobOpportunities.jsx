@@ -78,7 +78,8 @@ const JobOpportunities = (data) => {
                   <div className="flex flex-row justify-between mt-[4%] w-full">
                     <img
                       src={
-                        "http://localhost:5173/USAM_Freelance_REACTJS/src/assets/constants/" +
+                        window.location.pathname +
+                        "/src/assets/constants/" +
                         job.logo
                       }
                       className="w-[20%] h-[25%] mr-2 bg-white rounded-xl"
