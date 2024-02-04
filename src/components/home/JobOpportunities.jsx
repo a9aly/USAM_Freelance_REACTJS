@@ -79,7 +79,7 @@ const JobOpportunities = (data) => {
                     <img
                       src={
                         window.location.pathname +
-                        "/src/assets/constants/" +
+                        "src/assets/constants/" +
                         job.logo
                       }
                       className="w-[20%] h-[25%] mr-2 bg-white rounded-xl"
