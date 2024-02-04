@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Outlet, Link, NavLink } from "react-router-dom";
-import { usam } from "../../assets/constants";
+import { usam, menu, close } from "../../assets/constants";
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
   return (
@@ -57,7 +57,7 @@ const Navbar = () => {
 
         <div className="nav-container md:hidden ">
           <img
-            src={`${!toggle ? "./menu.jpg" : "./close.svg"}`}
+            src={`${!toggle ? `${menu}` : `${close}`}`}
             className="w-16 h-12 self-center"
             onClick={() => setToggle(!toggle)}
           />

@@ -16,7 +16,8 @@ function App() {
     <BrowserRouter>
       <Routes>
         <Route path="/" element={<Navbar />}>
-          <Route path="/USAM_Freelance_REACTJS/" element={<Home />} />
+          <Route index path="/" element={<Home />} />
+          <Route path="USAM_Freelance_REACTJS/" element={<Home />} />
           <Route path="find-freelancers" element={<FindFreelancers />} />
           <Route path="find-work" element={<FindWork />} />
           <Route path="login" element={<Login />} />

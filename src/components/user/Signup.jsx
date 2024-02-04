@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import Footer from "../navbar/Footer";
+import { facebook_blue, google, signup_bg } from "../../assets/constants";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -22,7 +23,7 @@ const Signup = () => {
           <div className="flex flex-col md:flex md:flex-row gap-[5%] w-[100%] h-[100%]">
             <div className=" self-center md:w-[40%] h-[100%] ">
               <img
-                src="signup-bg.jpeg"
+                src={signup_bg}
                 alt="signup form img"
                 className=" object-cover w-full h-full"
               />
@@ -35,13 +36,13 @@ const Signup = () => {
               <span className="text-center block text-white text-xl">
                 Or connect with
                 <img
-                  src="facebook-blue.svg"
+                  src={facebook_blue}
                   alt="facebok logo"
                   className=" ml-4 mr-2 w-5 h-5 inline align-middle rounded-full"
                 />
                 &nbsp;
                 <img
-                  src="google.svg"
+                  src={google}
                   alt="google logo"
                   className="w-5 h-5 inline align-middle bg-white rounded-full"
                 />
