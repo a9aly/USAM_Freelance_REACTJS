@@ -7,10 +7,7 @@ const Navbar = () => {
     <>
       <nav className="z-50 max-w-[100vw]">
         <div className="nav-container">
-          <Link
-            to="/USAM_Freelance_REACTJS/"
-            className="relative bg-white rounded-full w-24 h-24"
-          >
+          <Link to="/" className="relative bg-white rounded-full w-24 h-24">
             <img
               src={usam}
               alt="USAM LOGO"
@@ -21,7 +18,7 @@ const Navbar = () => {
 
         <div className="hidden md:flex flex-row gap-3 pt-8 pl-2">
           <NavLink
-            to="/USAM_Freelance_REACTJS/"
+            to="/"
             style={({ isActive }) => ({
               color: isActive ? "#6DAD04" : "",
             })}

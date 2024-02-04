@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { left_arrow, right_arrow, users } from "../../assets/constants";
+import { left_arrow, right_arrow, users, gitlab } from "../../assets/constants";
 const JobOpportunities = (data) => {
   const [activeCategory, setActiveCategory] = useState("product management");
 
@@ -79,7 +79,7 @@ const JobOpportunities = (data) => {
                     <img
                       src={
                         window.location.href +
-                        "src/assets/constants/" +
+                        "/src/assets/constants/" +
                         job.logo
                       }
                       className="w-[20%] h-[25%] mr-2 bg-white rounded-xl"

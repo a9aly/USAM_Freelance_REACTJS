@@ -4,5 +4,5 @@ import react from "@vitejs/plugin-react";
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  base: "/USAM_Freelance_REACTJS/",
+  base: "/USAM_Freelance_REACTJS",
 });

@@ -13,11 +13,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename="/USAM_Freelance_REACTJS">
       <Routes>
         <Route path="/" element={<Navbar />}>
-          <Route index path="/" element={<Home />} />
-          <Route path="USAM_Freelance_REACTJS/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="find-freelancers" element={<FindFreelancers />} />
           <Route path="find-work" element={<FindWork />} />
           <Route path="login" element={<Login />} />
