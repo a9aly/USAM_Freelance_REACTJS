@@ -78,7 +78,7 @@ const JobOpportunities = (data) => {
                   <div className="flex flex-row justify-between mt-[4%] w-full">
                     <img
                       src={
-                        window.location.pathname +
+                        window.location.href +
                         "src/assets/constants/" +
                         job.logo
                       }
